@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Приложение для изучения программирования на JavaScript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Это простое приложение на React, которое помогает пользователям изучать программирование на JavaScript, предоставляя разделы с теорией и практическими заданиями.
 
-## Available Scripts
+## Оглавление
 
-In the project directory, you can run:
+- [Приложение для изучения программирования на JavaScript](#приложение-для-изучения-программирования-на-javascript)
+  - [Оглавление](#оглавление)
+  - [Установка](#установка)
+  - [Использование](#использование)
+  - [Структура проекта](#структура-проекта)
+  - [Возможности](#возможности)
+  - [Технологии](#технологии)
+  - [Лицензия](#лицензия)
 
-### `npm start`
+## Установка
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Сначала клонируйте репозиторий на свой компьютер:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   git clone https://github.com/ваш-логин/ваш-репозиторий.git
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Установка
 
-### `npm run build`
+1. Сначала клонируйте репозиторий на свой компьютер:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/ваш-логин/ваш-репозиторий.git
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Перейдите в папку проекта:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   cd ваш-репозиторий
+   ```
 
-### `npm run eject`
+3. Установите необходимые зависимости:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Запустите приложение:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   Приложение будет доступно по адресу [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+## Использование
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Приложение содержит два основных раздела:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Теория**: В этом разделе представлены темы по программированию на JavaScript. Вы можете просмотреть доступные темы и выбрать ту, которая вам интересна.
+  
+- **Практика**: В этом разделе размещены практические задания, включая подсказки и полные решения. Вы можете работать над заданиями, получать подсказки и проверять свои ответы.
 
-### Code Splitting
+## Структура проекта
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+my-app/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── App.jsx
+│   │   ├── Theory.jsx
+│   │   └── Practice.jsx
+│   ├── styles/
+│   │   └── styles.css
+│   └── index.js
+├── package.json
+└── README.md
+```
 
-### Analyzing the Bundle Size
+## Возможности
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Легкая навигация между разделами.
+- Удобные практические задания с подсказками и решениями.
+- Простота в использовании для изучения JavaScript.
 
-### Making a Progressive Web App
+## Технологии
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [React](https://reactjs.org/) – библиотека для создания пользовательских интерфейсов.
+- [CSS](https://www.w3.org/Style/CSS/) – стилизация приложения.
 
-### Advanced Configuration
+## Лицензия
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Этот проект лицензируется по условиям лицензии MIT. Подробности можно найти в файле [LICENSE](LICENSE).
 
-### Deployment
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
