@@ -1,29 +1,39 @@
-import React, { useState } from 'react'
-import Theory from './Theory'
-import Practice from './Practice'
+// src/App.jsx
+import React from 'react'
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
+import Topic1 from './Topic1'
+import Practice1 from './Practice1'
+
 
 const App = () => {
-  const [section, setSection] = useState('theory') // По умолчанию показывать теорию
-
-  const toggleSection = () => {
-    setSection((prevSection) =>
-      prevSection === 'theory' ? 'practice' : 'theory'
-    )
-  }
-
   return (
-    <div>
-      <header>
-        <h1>Приложение для изучения программирования на JavaScript</h1>
-        <button onClick={toggleSection}>
-          {section === 'theory' ? 'Перейти к практике' : 'Перейти к теории'}
-        </button>
-      </header>
-      {section === 'theory' ? <Theory /> : <Practice />}
-      <footer>
-        <p>© 2023 Приложение для изучения </p>
-      </footer>
-    </div>
+    <BrowserRouter>
+      <div>
+        <header>
+          <h1>Изучение JavaScript</h1>
+          <nav>
+            <ul>
+              <li>
+                <Link to='/'>Главная</Link>
+              </li>
+              <li>
+                <Link to='/topic1'>Тема 1</Link>
+              </li>
+              <li>
+                <Link to='/practice1'>Практика 1</Link>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <main>
+          <Routes>
+            <Route path='/topic1' element={<Topic1 />} />
+            <Route path='/practice1' element={<Practice1 />} />
+          </Routes>
+        </main>
+      </div>
+    </BrowserRouter>
   )
 }
 
