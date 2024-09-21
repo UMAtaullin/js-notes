@@ -26,11 +26,11 @@ git checkout <имя ветки>
 git pull
 
 ## откат комитов переписать на безопасный
-git log --graph --all --oneline
+git log 
 git revert -m "Ваше сообщение" <commit-hash>
 git push 
 
-## откат гитгноре
+## откат .gitignore
 git rm -r --cached .idea
 git add .gitignore
 git commit -m '.idea added gitignore'
